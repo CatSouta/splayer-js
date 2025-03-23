@@ -1,0 +1,10 @@
+<div class="splayer-body">
+  <audio class="splayer-audio" src="<%= audio.url %>"<%= options.autoplay ? ' autoplay' : '' %><%=  options.loop ? ' loop' : '' %>></audio>
+  <div class="splayer-cover" <%= audio.cover ? 'style="background-image: url(' + audio.cover + ');"' : '' %>></div>
+  <div class="splayer-progress"></div>
+  <div class="splayer-mask" style="opacity: 1">
+    <div class="splayer-title"><%= audio.title %></div>
+    <div class="splayer-artist"><%= audio.artist %></div>
+    <div class="splayer-controller"><%= icons.play %></div>
+  </div>
+</div>

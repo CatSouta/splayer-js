@@ -1,0 +1,56 @@
+{
+  "name": "splayer-js",
+  "version": "1.1.0",
+  "description": "A lovely HTML5 square music player",
+  "main": "dist/SPlayer.min.js",
+  "style": "dist/SPlayer.min.css",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack/dev.config.js",
+    "build": "webpack --config webpack/prod.config.js",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "url": "git+https://github.com/CatSouta/splayer-js.git",
+    "type": "git"
+  },
+  "keywords": [
+    "player",
+    "music",
+    "html5"
+  ],
+  "author": "CatSouta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CatSouta/splayer-js/issues"
+  },
+  "homepage": "https://github.com/CatSouta/splayer-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "cssnano": "^7.0.6",
+    "ejs": "^3.1.10",
+    "ejs-loader": "^0.5.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.5.3",
+    "prettier-check": "^2.0.0",
+    "pretty-quick": "^4.1.1",
+    "sass": "^1.86.0",
+    "sass-loader": "^16.0.5",
+    "svg-inline-loader": "^0.8.2",
+    "template-string-optimize-loader": "^3.0.0",
+    "vitepress": "^1.6.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}

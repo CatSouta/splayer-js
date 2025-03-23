@@ -1,0 +1,21 @@
+# IDE
+.idea
+.vscode
+
+# Node.js
+node_modules
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VitePress
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+# Development
+test
+
+# Build Output
+dist

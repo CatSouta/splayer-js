@@ -1,0 +1,148 @@
+.splayer-body {
+  width: 8rem;
+  height: 8rem;
+  margin: 0.3rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../assets/cover.jpg');
+  box-shadow:
+    rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.splayer-audio {
+  display: none !important;
+}
+
+.splayer-cover {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.splayer-progress {
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 0.25rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.splayer-body:hover .splayer-progress,
+.splayer-progress.splayer-progress-paused {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.splayer-mask {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  transition: 200ms;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.splayer-body:hover .splayer-mask {
+  opacity: 1;
+}
+
+.splayer-title {
+  z-index: 4;
+  top: 0.7rem;
+  left: 0.7rem;
+  width: 6.6rem;
+  line-clamp: 2;
+  cursor: default;
+  overflow: hidden;
+  font-size: 0.9rem;
+  position: absolute;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.splayer-artist {
+  z-index: 4;
+  right: 0.7rem;
+  bottom: 0.7rem;
+  cursor: default;
+  max-width: 4rem;
+  overflow: hidden;
+  font-size: 0.8rem;
+  position: absolute;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.splayer-controller {
+  z-index: 2;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+.splayer-controller svg {
+  width: 2rem;
+  height: 2rem;
+  fill: rgba(255, 255, 255, 0.85);
+}
+
+@keyframes splayer_pulse {
+  0% {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes splayer_pulse {
+  0% {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 1.15, 1.15);
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+  }
+}
+
+.splayer-animate-pulse {
+  animation-duration: 300ms;
+  animation-name: splayer_pulse;
+  -webkit-animation-name: splayer_pulse;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
