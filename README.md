@@ -23,4 +23,4 @@ This project exists thanks to all the people who contribute.
 **SPlayer** © [CatSouta](https://github.com/CatSouta), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by CatSouta with help from contributors ([list](https://github.com/CatSouta/splayer-js/contributors)).
 
-> [Blog](https://souta.cc) · GitHub [@CatSouta](https://github.com/CatSouta)
+> Blog[@CatSouta](https://souta.cc) · GitHub [@CatSouta](https://github.com/CatSouta)
